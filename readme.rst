@@ -14,6 +14,8 @@ Copy sms.php in libraries/Sms.php into your libraries folder
 Use
 **************************
 - Controller
+...
+
 ```
 // initialize email and password
 $email = "";
@@ -23,5 +25,6 @@ $this->load->library('Sms',$lib);
 
 $this->Sms->someMethod();
 ```
+...
 
 Full documentation on https://smsgateway.me
