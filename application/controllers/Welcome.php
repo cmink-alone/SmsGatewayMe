@@ -27,6 +27,9 @@ class Welcome extends CI_Controller {
 
 		 $this->load->library('Sms',$arr);
 
-	
+
+		$result = $this->sms->sendMessageToNumber($no,$message,$deviceId);
+		echo json_encode($result);
+		
 	 }
 }
